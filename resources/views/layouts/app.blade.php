@@ -11,7 +11,7 @@
   <header class="ttl-header">
     <a class="ttl-logo" href="/">TurboTechLamps</a>
     <nav class="ttl-nav">
-      <a href="/catalog">Catalog</a>
+      <a href="/lamps">Catalog</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
