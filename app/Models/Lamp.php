@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Lamp extends Model
 {
-    //
+    protected $fillable = ['name', 'price','image_path'];
 }
