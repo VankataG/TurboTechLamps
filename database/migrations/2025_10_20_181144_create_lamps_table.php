@@ -12,8 +12,12 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('lamps', function (Blueprint $table) {
-            $table->id();
+            $table->id(); 
+            $table->string('name');
+            $table->decimal('price', 10, 2);
+            $table->softDeletes();
             $table->timestamps();
+            
         });
     }
 
