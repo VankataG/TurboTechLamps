@@ -13,7 +13,7 @@ class LampController extends Controller
     public function index()
     {
         $lamps = Lamp::all();
-        return view('lamps.index', compact('posts'));
+        return view('lamps.index', compact('lamps'));
     }
 
     /**
