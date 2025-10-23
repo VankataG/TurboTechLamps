@@ -19,7 +19,7 @@
       Night lamps crafted from <strong>real turbochargers</strong> — cleaned, restored, and wired with hidden installations.
     </p>
     <div class="cta-row reveal delay-2">
-      <a class="btn-primary" href="/catalog">Explore the Catalog</a>
+      <a class="btn-primary" href="/lamps">Explore the Catalog</a>
       <a class="btn-ghost" href="#about">How they’re made</a>
     </div>
   </div>

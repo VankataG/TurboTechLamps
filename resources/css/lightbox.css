@@ -1,0 +1,45 @@
+/* Fullscreen lightbox overlay */
+#ttl-lightbox {
+  position: fixed; inset: 0; z-index: 60;
+  display: grid; grid-template-rows: auto 1fr; pointer-events: none;
+  opacity: 0; transform: scale(.98);
+  transition: opacity .25s ease, transform .25s ease;
+}
+#ttl-lightbox.open { pointer-events: auto; opacity: 1; transform: scale(1); }
+
+/* Backdrop */
+.ttl-lb-backdrop {
+  position: absolute; inset: 0;
+  background: rgba(3, 6, 10, .65);
+  backdrop-filter: blur(8px);
+}
+
+/* Close button */
+.ttl-lb-close {
+  position: absolute; top: 14px; right: 16px; z-index: 2;
+  font-size: 34px; line-height: 1; width: 48px; height: 48px;
+  background: rgba(255,255,255,.06); color: #e9eef5;
+  border: 1px solid #1d2430; border-radius: 12px; cursor: pointer;
+}
+.ttl-lb-close:hover { background: rgba(255,255,255,.1); }
+
+/* Stage */
+.ttl-lb-stage {
+  position: relative; z-index: 1; display: grid; place-items: center;
+  padding: 60px 16px 24px;
+}
+#ttl-lb-img {
+  max-width: min(92vw, 1400px); max-height: 78vh; object-fit: contain; display: block;
+  border-radius: 14px; box-shadow: 0 20px 50px rgba(0,0,0,.55);
+  border: 1px solid #1d2430; background: #0c1118;
+  opacity: 0; transform: translateY(8px) scale(.995);
+  transition: opacity .3s ease, transform .3s ease;
+}
+#ttl-lb-img.loaded { opacity: 1; transform: translateY(0) scale(1); }
+
+/* Caption bar */
+.ttl-lb-caption {
+  margin-top: 12px; display: flex; gap: 10px; align-items: baseline; justify-content: center;
+  color: #a7b0bb; font-size: 14px;
+}
+.ttl-lb-caption #ttl-lb-title { color: #e9eef5; font-weight: 600; }

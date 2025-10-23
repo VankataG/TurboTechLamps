@@ -51,7 +51,7 @@ class LampController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Lamp $lamp)
+    public function show($id)
     {
         //
     }
